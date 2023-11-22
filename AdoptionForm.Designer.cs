@@ -49,10 +49,6 @@
             this.eligibilityResultLabel = new System.Windows.Forms.Label();
             this.submit = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.database1DataSet = new Coffee_adoption_application.Database1DataSet();
-            this.eligibilityBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.eligibilityTableAdapter = new Coffee_adoption_application.Database1DataSetTableAdapters.EligibilityTableAdapter();
-            this.tableAdapterManager = new Coffee_adoption_application.Database1DataSetTableAdapters.TableAdapterManager();
             this.eligibilityBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -75,12 +71,16 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.eligibilityBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database1DataSet = new Coffee_adoption_application.Database1DataSet();
+            this.eligibilityTableAdapter = new Coffee_adoption_application.Database1DataSetTableAdapters.EligibilityTableAdapter();
+            this.tableAdapterManager = new Coffee_adoption_application.Database1DataSetTableAdapters.TableAdapterManager();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eligibilityBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eligibilityBindingNavigator)).BeginInit();
             this.eligibilityBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eligibilityDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eligibilityBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -103,7 +103,7 @@
             // 
             this.homeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(64, 26);
             this.homeToolStripMenuItem.Text = "Home";
             this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
@@ -111,7 +111,7 @@
             // 
             this.coffeeMenuToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.coffeeMenuToolStripMenuItem.Name = "coffeeMenuToolStripMenuItem";
-            this.coffeeMenuToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
+            this.coffeeMenuToolStripMenuItem.Size = new System.Drawing.Size(108, 26);
             this.coffeeMenuToolStripMenuItem.Text = "Coffee Menu";
             this.coffeeMenuToolStripMenuItem.Click += new System.EventHandler(this.coffeeMenuToolStripMenuItem_Click);
             // 
@@ -119,7 +119,7 @@
             // 
             this.petAdoptionToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.petAdoptionToolStripMenuItem.Name = "petAdoptionToolStripMenuItem";
-            this.petAdoptionToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
+            this.petAdoptionToolStripMenuItem.Size = new System.Drawing.Size(110, 26);
             this.petAdoptionToolStripMenuItem.Text = "Pet Adoption";
             this.petAdoptionToolStripMenuItem.Click += new System.EventHandler(this.petAdoptionToolStripMenuItem_Click);
             // 
@@ -262,26 +262,6 @@
             this.label9.TabIndex = 19;
             this.label9.Text = "Eligibility: ";
             // 
-            // database1DataSet
-            // 
-            this.database1DataSet.DataSetName = "Database1DataSet";
-            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // eligibilityBindingSource
-            // 
-            this.eligibilityBindingSource.DataMember = "Eligibility";
-            this.eligibilityBindingSource.DataSource = this.database1DataSet;
-            // 
-            // eligibilityTableAdapter
-            // 
-            this.eligibilityTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.EligibilityTableAdapter = this.eligibilityTableAdapter;
-            this.tableAdapterManager.UpdateOrder = Coffee_adoption_application.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
             // eligibilityBindingNavigator
             // 
             this.eligibilityBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
@@ -319,7 +299,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -328,18 +308,19 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -348,14 +329,14 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 20);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -378,7 +359,7 @@
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -403,7 +384,7 @@
             this.eligibilityBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.eligibilityBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("eligibilityBindingNavigatorSaveItem.Image")));
             this.eligibilityBindingNavigatorSaveItem.Name = "eligibilityBindingNavigatorSaveItem";
-            this.eligibilityBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.eligibilityBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
             this.eligibilityBindingNavigatorSaveItem.Text = "Save Data";
             this.eligibilityBindingNavigatorSaveItem.Click += new System.EventHandler(this.eligibilityBindingNavigatorSaveItem_Click);
             // 
@@ -423,7 +404,7 @@
             this.dataGridViewTextBoxColumn8});
             this.eligibilityDataGridView.DataSource = this.eligibilityBindingSource;
             this.eligibilityDataGridView.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.eligibilityDataGridView.Location = new System.Drawing.Point(1057, 553);
+            this.eligibilityDataGridView.Location = new System.Drawing.Point(846, 430);
             this.eligibilityDataGridView.Name = "eligibilityDataGridView";
             this.eligibilityDataGridView.RowHeadersWidth = 51;
             this.eligibilityDataGridView.RowTemplate.Height = 24;
@@ -496,6 +477,26 @@
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.Width = 125;
             // 
+            // eligibilityBindingSource
+            // 
+            this.eligibilityBindingSource.DataMember = "Eligibility";
+            this.eligibilityBindingSource.DataSource = this.database1DataSet;
+            // 
+            // database1DataSet
+            // 
+            this.database1DataSet.DataSetName = "Database1DataSet";
+            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // eligibilityTableAdapter
+            // 
+            this.eligibilityTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.EligibilityTableAdapter = this.eligibilityTableAdapter;
+            this.tableAdapterManager.UpdateOrder = Coffee_adoption_application.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // AdoptionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -527,12 +528,12 @@
             this.Load += new System.EventHandler(this.AdoptionForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eligibilityBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eligibilityBindingNavigator)).EndInit();
             this.eligibilityBindingNavigator.ResumeLayout(false);
             this.eligibilityBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eligibilityDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eligibilityBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
