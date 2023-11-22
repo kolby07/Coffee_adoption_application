@@ -60,9 +60,9 @@
             this.homeToolStripMenuItem,
             this.coffeeMenuToolStripMenuItem,
             this.petAdoptionToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(676, 39);
+            this.menuStrip1.Location = new System.Drawing.Point(678, 39);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(292, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(290, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -143,6 +143,7 @@
             this.q1textBox1.Name = "q1textBox1";
             this.q1textBox1.Size = new System.Drawing.Size(162, 22);
             this.q1textBox1.TabIndex = 10;
+            this.q1textBox1.TextChanged += new System.EventHandler(this.q1textBox1_TextChanged);
             // 
             // label6
             // 
@@ -251,7 +252,7 @@
             this.Controls.Add(this.q5textBox5);
             this.Controls.Add(this.q4textBox4);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdoptionForm";
             this.Text = "AdoptionForm";
             this.menuStrip1.ResumeLayout(false);

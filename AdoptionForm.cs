@@ -65,8 +65,12 @@ namespace Coffee_adoption_application
             {
                 eligibilityResultLabel.Text = "Sorry, you are not eligible to adopt a dog based on the provided information.";
             }
+             
+        }
 
-            this.eligibilityTableAdapter.
+        private void q1textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
