@@ -48,9 +48,9 @@
             this.homeToolStripMenuItem,
             this.coffeeMenuToolStripMenuItem,
             this.petAdoptionToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(395, 33);
+            this.menuStrip1.Location = new System.Drawing.Point(342, 33);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(237, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(290, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -58,7 +58,7 @@
             // 
             this.homeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
             this.homeToolStripMenuItem.Text = "Home";
             this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click_1);
             // 
@@ -66,7 +66,7 @@
             // 
             this.coffeeMenuToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.coffeeMenuToolStripMenuItem.Name = "coffeeMenuToolStripMenuItem";
-            this.coffeeMenuToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
+            this.coffeeMenuToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
             this.coffeeMenuToolStripMenuItem.Text = "Coffee Menu";
             this.coffeeMenuToolStripMenuItem.Click += new System.EventHandler(this.coffeeMenuToolStripMenuItem_Click);
             // 
@@ -74,7 +74,7 @@
             // 
             this.petAdoptionToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.petAdoptionToolStripMenuItem.Name = "petAdoptionToolStripMenuItem";
-            this.petAdoptionToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
+            this.petAdoptionToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
             this.petAdoptionToolStripMenuItem.Text = "Pet Adoption";
             this.petAdoptionToolStripMenuItem.Click += new System.EventHandler(this.petAdoptionToolStripMenuItem_Click);
             // 
@@ -91,6 +91,8 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.ErrorImage = global::Coffee_adoption_application.Properties.Resources.Bark_and_Bold_logos_transparent;
             this.pictureBox1.Image = global::Coffee_adoption_application.Properties.Resources.Bark_and_Bold_logos_transparent;
             this.pictureBox1.Location = new System.Drawing.Point(-8, -25);
             this.pictureBox1.Name = "pictureBox1";

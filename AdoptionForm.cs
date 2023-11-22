@@ -72,5 +72,25 @@ namespace Coffee_adoption_application
         {
 
         }
+
+        private void eligibilityBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.eligibilityBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.database1DataSet);
+
+        }
+
+        private void AdoptionForm_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'database1DataSet.Eligibility' table. You can move, or remove it, as needed.
+            this.eligibilityTableAdapter.Fill(this.database1DataSet.Eligibility);
+
+        }
+
+        private void eligibilityDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
